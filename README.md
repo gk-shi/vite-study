@@ -20,20 +20,22 @@ npm i # yarn
 # 安装 vite-mini 所需依赖
 cd (当前项目路径)/vite-mini
 
-npm i # yarn
+npm i 
+# 或者 yarn
 
 # 运行 vite 自身启动项目，查看它的请求过程，
 # 对比验证自己写的 vite-mini 功能
 # 项目根目录
-npm run dev # yarn dev
+npm run dev 
+# 或者 yarn dev
 
 
 # 运行手写的核心功能调试
 # 项目根目录
-npm run mini # yarn mini
-
-# 如果有安装 nodemon
-nodemon
+npm run mini 
+# 或者 yarn mini
+# 如果有安装 nodemon，可实时响应 vite-mini/ 下的文件更改
+# nodemon
 
 ```
 
