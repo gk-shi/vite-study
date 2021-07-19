@@ -150,4 +150,4 @@ serveStaticPlugin -> vueCompilerPlugin -> moduleResolvePlugin -> moduleRewritePl
 
 4.[b站视频](https://www.bilibili.com/video/BV1at4y1a7zi)
 
-注：Vite Design 有介绍 vite 2.0 的一些变化点，`vite-mini/`的内容有根据第4点的 b站视频 调整，所以如果代码看不懂，也可以查看视频(有效总时长约 1:40:00 左右)
+注：Vite Design 有介绍 vite 2.0 的一些变化点，`vite-mini/`的内容有根据第4点的 b站视频 调整，所以如果代码看不懂，也可以查看视频(有效总时长约 1:40:00)
