@@ -1,0 +1,4 @@
+{
+  "watch": ["vite-mini"],
+  "exec": "node ./vite-mini/src/index.js"
+}
