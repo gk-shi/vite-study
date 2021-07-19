@@ -23,11 +23,8 @@ exports.rewriteImports = (content) => {
   imports.forEach(imp => {
     const { n, s, e } = imp // n: import from 中 from 的值，s: 开始下标，e: 结束下标
     if (!/^[\.\/]/.test(n)) {
+      // 将非  /   ./  ../ 开头的裸模块路径替换
       const id = `/@modules/${n}`
-      ms.overwrite(s, e, id)
-    } else if (/\.css$/.test(n)) {
-      // .css 文件
-      const id = `${n}?import`
       ms.overwrite(s, e, id)
     }
   })
