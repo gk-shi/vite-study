@@ -16,7 +16,7 @@ const moduleResolvePlugin = ({ app, root }) => {
     }
     /**
      * 注释的实现方案应该是更为接近库真实的实现方案，
-     * 但是由于库里调用了设计 process.env 的操作，没有做相应的处理的话，
+     * 但是由于库里调用了涉及 process.env 的操作，没有做相应的类型预打包处理的话，
      * 只能通过 hack 的方式来塞入，因此最终没有采用
      */
     // const pkgPath = path.resolve(root, 'node_modules', id, 'package.json')
