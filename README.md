@@ -116,11 +116,15 @@ vite 的工作方式是通过浏览器原生支持 ESM 并且会发起网络请�
 
 
 
+
+
+
+
 每个插件的作用顺序，也不难确定：
 
-- 首先是`serveStaticPlugin`让文件顺利访问，
+- 首先是`serveStaticPlugin`让文件顺利访问
 - 紧接着本应该是`moduleRewritePlugin`重写路径，然后给`moduleResolvePlugin`插件解析获取的，但由于解析出的文件内容可能还存在引用，又需要进行路径重写。所以索性就先尝试解析文件，如果碰到`a`模块路径需要改写，则改写路径，下一次请求再获取`a`模块内容
-- 在`vueCompilerPlugin`对`.vue`文件进行解析的时候，它可能会引入第三方模块要进行路径改写，或者说引入的文件有改写好的模块需要解析，所以该插件的作用应该在`moduleResolvePlugin`和`moduleRewritePlugin`之前。
+- 在`vueCompilerPlugin`对`.vue`文件进行解析的时候，它可能会引入第三方模块要进行路径改写，或者说引入的文件有改写好的模块需要解析，所以该插件的作用应该在`moduleResolvePlugin`和`moduleRewritePlugin`之前
 
 
 
