@@ -15,7 +15,8 @@
 
 ```shell
 # 安装 vite 本身所需依赖
-npm i # yarn
+npm i 
+# yarn
 
 # 安装 vite-mini 所需依赖
 cd (当前项目路径)/vite-mini
